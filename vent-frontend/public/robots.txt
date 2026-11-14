@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cloudy-5n1s.onrender.com/sitemap.xml
