@@ -1,0 +1,25 @@
+{
+  "name": "vent-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch --env-file=.env src/index.js",
+    "admin": "node --env-file=.env scripts/admin.js",
+    "test-mod": "node --env-file=.env scripts/test-moderation.js",
+    "test-discord": "node --env-file=.env scripts/test-discord.js",
+    "seed": "node --env-file=.env scripts/seed.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.0"
+  }
+}
